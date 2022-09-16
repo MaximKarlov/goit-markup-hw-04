@@ -77,6 +77,14 @@ img {
     border-bottom: 1px solid #ececec;
 }
 
+.nav-icons {
+    align-items: baseline;
+    height: 16px;
+    width: 20px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .logo {
     display: flex;
     text-decoration: none;
@@ -90,7 +98,6 @@ img {
 }
 .logo-header {
     color: var(--logo-black);
-    /* margin-right: 93px; */
 }
 .logo-footer {
     color: var(--text-white);
@@ -115,7 +122,9 @@ img {
 }
 .contacts-wrap {
     margin-left: auto;
+    /* align-items: center; */
 }
+
 .contacts,
 .foot-contacts {
     text-decoration: none;
@@ -157,6 +166,9 @@ img {
 
 .secbox {
     background-color: var(--foot-box-color);
+    background-image: url("/img/efectchoise.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 200px 0;
 }
 .efectchoise {
