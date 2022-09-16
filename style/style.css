@@ -7,6 +7,7 @@
     --contacts-color: rgba(117, 117, 117, 1);
     --buttons-color: rgba(245, 244, 250, 1);
     --border-line: rgba(238, 238, 238, 1);
+    --social-link-color: rgba(175, 177, 184, 1);
 }
 h1,
 h2,
@@ -199,7 +200,7 @@ img {
     display: flex;
     /* justify-content: center; */
     width: 270px;
-    background: #f5f4fa;
+    background: rgb(245, 244, 250);
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 25px 100px;
@@ -301,6 +302,39 @@ img {
 }
 .ourteam-pad {
     padding: 30px 0;
+}
+.ourteam-soc,
+.regular-customers-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 12px; */
+}
+.ourteam-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+.ourteam-social-link:not(:first-child) {
+    margin-left: 10px;
+}
+.ourteam-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-link-color);
+}
+.ourteam-social-link:hover {
+    border-radius: 50%;
+    background: var(--active-color);
+    fill: var(--text-white);
+}
+
+.regular-customers-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--social-link-color);
 }
 
 .footbox {
