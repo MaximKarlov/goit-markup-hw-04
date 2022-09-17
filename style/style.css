@@ -190,20 +190,18 @@ img {
     gap: 30px;
 }
 .benefits-icons {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 70px;
     height: 70px;
 }
 .benefits-border {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     width: 270px;
+    height: 120px;
     background: rgb(245, 244, 250);
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    align-items: center;
 }
 
 .but-order {
@@ -308,7 +306,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 12px; */
+    margin-top: 12px;
 }
 .ourteam-social-link {
     display: flex;
