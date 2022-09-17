@@ -20,6 +20,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+svg {
+    display: block;
+}
 li {
     list-style: none;
 }
@@ -235,7 +238,8 @@ img {
     border-radius: 4px;
 }
 
-.advantage-h3 {
+.advantage-h3,
+.foot-h3 {
     color: var(--text-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -254,7 +258,8 @@ img {
 }
 
 .whatwedo,
-.ourteam {
+.ourteam,
+.regular-customers-h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -279,7 +284,8 @@ img {
     min-width: 264px;
 }
 .ourteam::first-letter,
-.whatwedo::first-letter {
+.whatwedo::first-letter,
+.regular-customers-h2::first-letter {
     text-transform: capitalize;
 }
 
@@ -302,18 +308,25 @@ img {
     padding: 30px 0;
 }
 .ourteam-soc,
-.regular-customers-item {
+.regular-customers {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.ourteam-soc {
     margin-top: 12px;
 }
+.regular-customers {
+    gap: 30px;
+}
 .ourteam-social-link {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
+    margin-top: 12px;
 }
 .ourteam-social-link:not(:first-child) {
     margin-left: 10px;
@@ -323,16 +336,35 @@ img {
     height: 20px;
     fill: var(--social-link-color);
 }
+
 .ourteam-social-link:hover {
     border-radius: 50%;
-    background: var(--active-color);
+    background-color: var(--active-color);
+}
+.ourteam-social-link:hover svg {
     fill: var(--text-white);
+}
+.regular-customers-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 .regular-customers-icon {
     width: 106px;
     height: 60px;
     fill: var(--social-link-color);
+}
+.regular-customers-item:hover,
+.regular-customers-item:hover svg {
+    cursor: pointer;
+    border-color: var(--active-color);
+    fill: var(--active-color);
 }
 
 .footbox {
@@ -355,6 +387,20 @@ img {
 
 .footaddr-marge {
     margin-bottom: 9px;
+}
+
+.foot-h3 {
+    color: var(--text-white);
+}
+.foot-social {
+    width: 206px;
+    align-items: center;
+}
+.foot-special {
+    display: flex;
+}
+.joins {
+    margin: 12px 0 0 70px;
 }
 .nul-padding {
     padding-bottom: 0;
