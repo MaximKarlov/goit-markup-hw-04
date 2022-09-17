@@ -132,6 +132,7 @@ img {
 .contacts,
 .foot-contacts {
     text-decoration: none;
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -315,6 +316,7 @@ img {
 }
 .ourteam-soc {
     margin-top: 12px;
+    height: 48px;
 }
 .regular-customers {
     gap: 30px;
@@ -326,7 +328,6 @@ img {
     align-items: center;
     width: 44px;
     height: 44px;
-    margin-top: 12px;
 }
 .ourteam-social-link:not(:first-child) {
     margin-left: 10px;
@@ -391,10 +392,19 @@ img {
 
 .foot-h3 {
     color: var(--text-white);
+    margin-bottom: 20px;
 }
 .foot-social {
     width: 206px;
+    display: flex;
+}
+.circle {
+    /* width: 44px;
+    height: 44px;
     align-items: center;
+    justify-content: center; */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .foot-special {
     display: flex;
