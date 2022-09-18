@@ -82,9 +82,6 @@ img {
 }
 
 .nav-icons {
-    align-items: baseline;
-    height: 16px;
-    width: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -315,43 +312,39 @@ img {
 .ourteam-soc {
     margin-top: 12px;
     height: 48px;
+    gap: 10px;
 }
 .regular-customers {
     gap: 30px;
 }
-.ourteam-social-link {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-}
-.ourteam-social-link:not(:first-child) {
-    margin-left: 10px;
-}
+
 .ourteam-social-icon {
     width: 20px;
     height: 20px;
     fill: var(--social-link-color);
 }
-
-.ourteam-social-link:hover {
-    border-radius: 50%;
-    background-color: var(--active-color);
-}
-.ourteam-social-link:hover svg {
-    fill: var(--text-white);
-}
-.regular-customers-item {
+.click,
+.foot-click {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+}
+.foot-click {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.foot-click:hover {
+    background-color: var(--active-color);
+}
 
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+.click:hover {
+    background-color: var(--active-color);
+}
+.click:hover svg,
+.foot-click svg {
+    fill: var(--text-white);
 }
 
 .regular-customers-icon {
@@ -359,9 +352,19 @@ img {
     height: 60px;
     fill: var(--social-link-color);
 }
-.regular-customers-item:hover,
-.regular-customers-item:hover svg {
-    cursor: pointer;
+.regular-click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.regular-click:hover,
+.regular-click:hover svg,
+.regular-click:focus,
+.regular-click:focus svg {
     border-color: var(--active-color);
     fill: var(--active-color);
 }
@@ -395,15 +398,9 @@ img {
 .foot-social {
     width: 206px;
     display: flex;
+    gap: 10px;
 }
-.circle {
-    /* width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center; */
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-}
+
 .foot-special {
     display: flex;
 }
