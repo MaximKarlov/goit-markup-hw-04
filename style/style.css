@@ -32,6 +32,9 @@ body {
     font-size: 14px;
     color: var(--text-color);
 }
+.bodik {
+    min-width: 1200px;
+}
 
 img {
     display: block;
