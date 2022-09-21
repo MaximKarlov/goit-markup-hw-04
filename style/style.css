@@ -115,6 +115,7 @@ img {
 
 .list-a {
     display: flex;
+    position: relative;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -149,6 +150,16 @@ img {
 }
 .active {
     color: var(--active-color);
+}
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--active-color);
 }
 .bord {
     background-color: var(--text-white);
