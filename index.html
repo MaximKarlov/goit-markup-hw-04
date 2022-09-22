@@ -57,7 +57,12 @@
                 <section>
                     <div class="secbox">
                         <h1 class="efectchoise">Ефективні рішення для вашого бізнесу</h1>
-                        <button type="button" class="but-order">Замовити послугу</button>
+                        <button type="button" class="but-order" data-modal-open>Замовити послугу</button>
+                        <div class="backdrop is-hidden">
+                            <div class="modal">
+                                <button data-modal-close>close</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -478,5 +483,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
